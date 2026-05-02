@@ -1,0 +1,29 @@
+#include <stdio.h>
+ 
+int main(){
+    
+    int qntnotasvalidas = 0;
+    float nota, media, totalnotas = 0;
+    
+   while(1){
+       
+       if(qntnotasvalidas == 2){
+           media = (totalnotas/2);
+           printf("media = %.2f\n", media);
+           break;
+       }
+       
+        scanf("%f", &nota);
+        
+       if(nota<=10 && nota >= 0){
+                totalnotas += nota;
+                qntnotasvalidas++;
+       }
+       else{
+           printf("nota invalida\n");
+       }
+       
+    }
+
+    return 0;
+}
