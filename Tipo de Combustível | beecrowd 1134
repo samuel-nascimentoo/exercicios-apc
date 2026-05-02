@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+   
+   int alc = 0, gas = 0, di = 0, digito;
+   
+    while(digito != 4){
+       scanf("%d", &digito);
+       if (digito == 1){
+           alc++;
+       }
+       else if(digito == 2){
+           gas++;
+       }
+       else if(digito == 3){
+           di++;
+       }
+   }
+   
+    printf("MUITO OBRIGADO\nAlcool: %d\nGasolina: %d\nDiesel: %d\n", alc, gas, di);
+   
+    return 0;
+}
